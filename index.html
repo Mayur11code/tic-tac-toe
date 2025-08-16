@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box 1" column="0" row="1"></div>
+        <div class="box 2" column="1" row="1"></div>
+        <div class="box 3" column="2" row="1"></div>
+        <div class="box 4" column="0" row="2"></div>
+        <div class="box 5" column="1" row="2"></div>
+        <div class="box 6" column="2" row="2"></div>
+        <div class="box 7" column="0" row="3"></div>
+        <div class="box 8" column="1" row="3"></div>
+        <div class="box 9" column="2" row="3"></div>
+    </div>
+
+    <div class="form visibility">
+        <form action="get">
+            <label for="player1 player2">
+                Enter Player Details<input type="text" name="player1" id="player1">
+                <input type="text" name="player2" id="player2">
+            </label>
+            <label for="">Play with Dumb Bot ?<input type="checkbox" class="bot" id="dumbbot"></label>
+            <input type="submit" value="submit" class="submit">
+        </form>
+    </div>
+
+    <div class="result">
+        <div class="name1"></div>
+        <div class="name2"></div>
+        <div class="score p1"></div>
+        <div class="score p2"></div>
+    </div>
+
+    <button class="playagn visibility">PLAY AGAIN</button>
+    <button class="start">START GAME</button>
+    
+</body>
+
+</html>
