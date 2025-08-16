@@ -123,11 +123,11 @@ function Onclick() {
                 }
                 if (gameboard.botstatus == 1 && gameboard.gamestatus) {
                     let boton = 1;
-
+                    
                     while (boton) {
                         let rownum = Math.floor((Math.random() * 3) + 1)
-                        let rowkey = `row${rownum}`
                         let colkey = Math.floor((Math.random() * 3))
+                        let rowkey = `row${rownum}`
                         let target = document.querySelector(`div[row="${rownum}"][column="${colkey}"]`)
                         if (!gameboard[rowkey].hasOwnProperty(colkey)) {
                             target.classList.add("Cross")
@@ -154,9 +154,9 @@ function Onclick() {
                                 break;
                             }
                         }
-                    }
-                    if (!gameboard.winstatus && gameboard.gamestatus) {
-                        gameboard.winstatus = patternChecker(rowkey, colkey);
+                        if (!gameboard.winstatus && gameboard.gamestatus) {
+                            gameboard.winstatus = patternChecker(rowkey, colkey);
+                        }
                     }
 
 
